@@ -1,5 +1,3 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   mode: 'universal',
   /*
@@ -48,13 +46,13 @@ export default {
    */
   vuetify: {
     theme: {
-      primary: colors.blue.darken2,
-      accent: colors.grey.darken3,
-      secondary: colors.amber.darken3,
-      info: colors.teal.lighten1,
-      warning: colors.amber.base,
-      error: colors.deepOrange.accent4,
-      success: colors.green.accent3
+      primary: '#A00D5B',
+      accent: '#0FA7BA',
+      secondary: '#F0DB44',
+      info: '#1591A0',
+      warning: '#ffc107',
+      error: '#dd2c00',
+      success: '#00e676'
     }
   },
   /*
