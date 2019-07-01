@@ -1,6 +1,6 @@
 <template>
-  <v-toolbar fixed app flat extended class="primary--text pt-2">
-    <v-btn flat icon color="accent" class="mr-3 hidden-md-and-up">
+  <v-toolbar fixed app flat extension-height="40" class="accent--text pt-2">
+    <v-btn flat icon color="primary" class="mr-3 hidden-md-and-up">
       <v-icon>menu</v-icon>
     </v-btn>
     <v-spacer class="hidden-md-and-up" />
@@ -38,11 +38,11 @@
     >
       {{ cartPrice }} kr
     </h3>
-    <v-btn depressed small color="accent" class="ml-5 hidden-sm-and-down">
+    <v-btn depressed small color="primary" class="ml-5 hidden-sm-and-down">
       Check out
     </v-btn>
-    <template v-slot:extension>
-      <Navigation />
+    <template v-slot:extension class="hidden-sm-and-down">
+      <Navigation v-if="extendToolbar" />
     </template>
   </v-toolbar>
 </template>
@@ -63,6 +63,12 @@ export default {
   computed: {
     cartHasItems() {
       return this.cartSize > 0
+    },
+    extendToolbar() {
+      return (
+        this.$vuetify.breakpoint.name !== 'sm' &&
+        this.$vuetify.breakpoint.name !== 'xs'
+      )
     }
   },
   methods: {
