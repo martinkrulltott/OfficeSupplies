@@ -19,7 +19,7 @@
       @click:append-outer="search()"
     />
     <v-badge
-      v-model="showCartBadge"
+      v-model="cartHasItems"
       right
       overlap
       color="accent"
@@ -32,7 +32,12 @@
         shopping_cart
       </v-icon>
     </v-badge>
-    <h3 class="headline ml-3 hidden-sm-and-down">{{ cartPrice }} kr</h3>
+    <h3
+      v-if="cartHasItems && cartPrice"
+      class="headline ml-3 hidden-sm-and-down"
+    >
+      {{ cartPrice }} kr
+    </h3>
     <v-btn depressed small color="accent" class="ml-5 hidden-sm-and-down">
       Check out
     </v-btn>
@@ -56,7 +61,7 @@ export default {
     }
   },
   computed: {
-    showCartBadge() {
+    cartHasItems() {
       return this.cartSize > 0
     }
   },
