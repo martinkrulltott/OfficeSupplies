@@ -1,9 +1,6 @@
 <template>
   <v-app light>
-    <v-toolbar fixed app>
-      <Header />
-      <Navigation />
-    </v-toolbar>
+    <Header />
     <v-content>
       <v-container>
         <nuxt />
@@ -17,11 +14,9 @@
 
 <script>
 import Header from '@/components/Header'
-import Navigation from '@/components/Navigation'
 export default {
   components: {
-    Header,
-    Navigation
+    Header
   }
 }
 </script>

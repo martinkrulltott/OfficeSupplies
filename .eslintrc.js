@@ -12,12 +12,14 @@ module.exports = {
     'prettier/vue',
     'plugin:prettier/recommended',
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'eslint-config-prettier'
   ],
   plugins: [
     'prettier'
   ],
   // add your custom rules here
   rules: {
+    'vue/max-attributes-per-line': 'off'
   }
 }

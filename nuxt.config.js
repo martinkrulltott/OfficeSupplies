@@ -46,7 +46,7 @@ export default {
    */
   vuetify: {
     theme: {
-      primary: '#A00D5B',
+      primary: '#ed2c92',
       accent: '#0FA7BA',
       secondary: '#F0DB44',
       info: '#1591A0',
