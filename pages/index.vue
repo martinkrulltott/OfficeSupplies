@@ -1,9 +1,6 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="text-xs-center">
-        <logo />
-      </div>
       <v-card>
         <v-card-title class="headline">
           Welcome to the Vuetify + Nuxt.js template
@@ -44,11 +41,7 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+// export default {
 
-export default {
-  components: {
-    Logo
-  }
-}
+// }
 </script>
