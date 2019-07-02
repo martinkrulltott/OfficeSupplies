@@ -11,7 +11,7 @@
           </v-flex>
           <v-flex d-flex xs12 md4 child-flex>
             <v-card color="accent" tile flat>
-              <v-card-text>Images {{ lorem }} {{ lorem }}</v-card-text>
+              <v-card-text>Images</v-card-text>
             </v-card>
           </v-flex>
           <v-flex d-flex xs12 md8>

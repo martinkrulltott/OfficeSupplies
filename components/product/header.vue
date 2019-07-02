@@ -22,7 +22,7 @@
           />
         </v-flex>
         <v-flex sm12 md4 text-md-right>
-          <v-btn depressed color="primary" class="ma-0">
+          <v-btn depressed color="primary" class="ma-0" @click="addToCart()">
             Buy
           </v-btn>
         </v-flex>
@@ -34,7 +34,17 @@
 <script>
 export default {
   name: 'Header',
-  props: ['product']
+  props: {
+    product: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    addToCart() {
+      this.$store.dispatch('cart/add', this.product)
+    }
+  }
 }
 </script>
 

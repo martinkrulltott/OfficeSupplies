@@ -54,13 +54,13 @@ export default {
   components: {
     Navigation
   },
-  data() {
-    return {
-      cartSize: 5, // TODO: Fetch from store
-      cartPrice: 536
-    }
-  },
   computed: {
+    cartSize() {
+      return this.$store.state.cart.products.length
+    },
+    cartPrice() {
+      return this.$store.state.cart.price
+    },
     cartHasItems() {
       return this.cartSize > 0
     },
