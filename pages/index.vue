@@ -14,7 +14,7 @@
           </v-flex>
           <v-flex d-flex xs12 sm8>
             <v-layout row wrap>
-              <v-flex class="hidden-xs-and-down">
+              <v-flex class="hidden-xs-only">
                 <Header :product="product" />
               </v-flex>
               <v-flex d-flex>
