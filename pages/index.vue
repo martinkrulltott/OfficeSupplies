@@ -57,6 +57,18 @@ export default {
     product() {
       return this.$store.state.product.selected
     }
+  },
+  head() {
+    return {
+      title: this.product.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.product.description
+        }
+      ]
+    }
   }
 }
 </script>
