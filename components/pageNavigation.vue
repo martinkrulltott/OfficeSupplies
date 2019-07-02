@@ -8,6 +8,6 @@
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'PageNavigation'
 }
 </script>

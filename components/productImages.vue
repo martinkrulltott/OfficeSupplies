@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'Images',
+  name: 'ProductImages',
   props: {
     product: {
       type: Object,

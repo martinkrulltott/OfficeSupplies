@@ -2,23 +2,23 @@
   <v-container fluid class="hproduct">
     <v-layout row>
       <v-flex md2 row class="hidden-sm-and-down">
-        <Menu />
+        <ProductMenu />
       </v-flex>
       <v-flex md10 row>
         <v-layout row wrap>
           <v-flex class="hidden-sm-and-up">
-            <Header :product="product" />
+            <ProductTitle :product="product" />
           </v-flex>
           <v-flex d-flex xs12 sm4 child-flex>
-            <Images :product="product" />
+            <ProductImages :product="product" />
           </v-flex>
           <v-flex d-flex xs12 sm8>
             <v-layout row wrap align-content-start>
               <v-flex class="hidden-xs-only">
-                <Header :product="product" />
+                <ProductTitle :product="product" />
               </v-flex>
               <v-flex d-flex>
-                <Description :product="product" />
+                <ProductDescription :product="product" />
               </v-flex>
             </v-layout>
           </v-flex>
@@ -31,7 +31,7 @@
             md4
             pa-2
           >
-            <Inspiration :inspiration="item" />
+            <ProductInspiration :inspiration="item" />
           </v-flex>
         </v-layout>
       </v-flex>
@@ -40,18 +40,18 @@
 </template>
 
 <script>
-import Menu from '~/components/product/Menu'
-import Header from '~/components/product/Header'
-import Description from '~/components/product/Description'
-import Images from '~/components/product/Images'
-import Inspiration from '~/components/product/Inspiration'
+import ProductMenu from '~/components/ProductMenu'
+import ProductTitle from '~/components/ProductTitle'
+import ProductDescription from '~/components/ProductDescription'
+import ProductImages from '~/components/ProductImages'
+import ProductInspiration from '~/components/ProductInspiration'
 export default {
   components: {
-    Menu,
-    Header,
-    Description,
-    Images,
-    Inspiration
+    ProductMenu,
+    ProductTitle,
+    ProductDescription,
+    ProductImages,
+    ProductInspiration
   },
   computed: {
     product() {
