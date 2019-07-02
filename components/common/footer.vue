@@ -9,7 +9,7 @@
         position="left center"
       />
     </v-flex>
-    <v-flex md6 sm12 xs12 pr-2>
+    <v-flex md6 sm12 xs12 pr-2 mb-2>
       <p class="caption ma-0">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra

@@ -5,13 +5,13 @@
     </v-card-title>
     <v-card-text class="pb-1">
       <v-layout row wrap>
-        <v-flex xs6 sm3 md4>
+        <v-flex xs6 sm4 md4>
           <h3 class="headline mb-0 accent--text font-weight-bold">
             {{ product.price }} kr
           </h3>
           <span class="old-price accent--text">{{ product.oldPrice }} kr</span>
         </v-flex>
-        <v-flex xs6 sm3 md4>
+        <v-flex xs6 sm4 md4>
           <v-select
             :items="product.variants"
             label="Select"
@@ -21,7 +21,7 @@
             background-color="grey lighten-3"
           />
         </v-flex>
-        <v-flex sm12 md4 text-md-right>
+        <v-flex xs12 sm4 text-sm-right>
           <v-btn depressed color="primary" class="ma-0" @click="addToCart()">
             Buy
           </v-btn>
