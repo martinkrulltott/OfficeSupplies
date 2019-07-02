@@ -3,7 +3,7 @@
     <v-card-title primary-title class="py-0">
       <h2 class="display-1 mb-0">{{ product.title }}</h2>
     </v-card-title>
-    <v-card-text>
+    <v-card-text class="pb-1">
       <v-layout row wrap>
         <v-flex xs6 sm3 md4>
           <h3 class="headline mb-0 accent--text font-weight-bold">

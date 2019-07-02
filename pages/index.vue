@@ -20,15 +20,7 @@
                 <Header :product="product" />
               </v-flex>
               <v-flex d-flex>
-                <v-layout row>
-                  <v-flex d-flex>
-                    <v-card color="amber lighten-2" tile flat>
-                      <v-card-text>
-                        {{ product.description }}
-                      </v-card-text>
-                    </v-card>
-                  </v-flex>
-                </v-layout>
+                <Description :product="product" />
               </v-flex>
             </v-layout>
           </v-flex>
@@ -41,10 +33,12 @@
 <script>
 import Menu from '@/components/product/Menu'
 import Header from '@/components/product/Header'
+import Description from '@/components/product/Description'
 export default {
   components: {
     Menu,
-    Header
+    Header,
+    Description
   },
   data() {
     return {
