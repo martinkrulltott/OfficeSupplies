@@ -4,6 +4,7 @@
       <v-img
         :src="selectedImage.src"
         alt="selectedImage.alt"
+        class="photo"
         aspect-ratio="1"
         contain
       />

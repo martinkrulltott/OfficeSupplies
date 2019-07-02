@@ -1,12 +1,12 @@
 <template>
   <v-card tile flat>
     <v-card-title primary-title class="py-0">
-      <h2 class="display-1 mb-0">{{ product.title }}</h2>
+      <h2 class="fn display-1 mb-0">{{ product.title }}</h2>
     </v-card-title>
     <v-card-text class="pb-1">
       <v-layout row wrap>
         <v-flex xs6 sm4 md4>
-          <h3 class="headline mb-0 accent--text font-weight-bold">
+          <h3 class="price headline mb-0 accent--text font-weight-bold">
             {{ product.price }} kr
           </h3>
           <span class="old-price accent--text">{{ product.oldPrice }} kr</span>

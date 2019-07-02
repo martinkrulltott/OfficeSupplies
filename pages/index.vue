@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="hproduct">
     <v-layout row>
       <v-flex md2 row class="hidden-sm-and-down">
         <Menu />
@@ -13,7 +13,7 @@
             <Images :product="product" />
           </v-flex>
           <v-flex d-flex xs12 sm8>
-            <v-layout row wrap>
+            <v-layout row wrap align-content-start>
               <v-flex class="hidden-xs-only">
                 <Header :product="product" />
               </v-flex>
