@@ -2,52 +2,49 @@
   <v-container fluid>
     <v-layout row>
       <v-flex md3 row class="hidden-sm-and-down">
-        <v-navigation-drawer class="primary--text" permanent>
-          <v-list dense>
-            <!-- eslint-disable-next-line -->
-            <v-list-tile v-for="item in menuItems" :key="item" @click="">
-              <v-list-tile-content>
-                <v-list-tile-title class="primary--text">
-                  {{ item }}
-                </v-list-tile-title>
-              </v-list-tile-content>
-            </v-list-tile>
-          </v-list>
-        </v-navigation-drawer>
+        <Menu />
       </v-flex>
-      <v-flex md3 row style="border:1px solid black">
-        Hello world
+      <v-flex md9 row>
+        <v-layout row wrap>
+          <v-flex class="hidden-md-and-up">
+            <Header />
+          </v-flex>
+          <v-flex d-flex xs12 md5 child-flex>
+            <v-card color="orange lighten-2" tile flat>
+              <v-card-text>Images {{ lorem }} {{ lorem }}</v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex d-flex xs12 md7>
+            <v-layout row wrap>
+              <v-flex class="hidden-sm-and-down">
+                <Header />
+              </v-flex>
+              <v-flex d-flex>
+                <v-layout row>
+                  <v-flex d-flex>
+                    <v-card color="amber lighten-2" tile flat>
+                      <v-card-text>
+                        Text {{ lorem }} {{ lorem }} {{ lorem }}
+                      </v-card-text>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
   </v-container>
 </template>
 
 <script>
+import Menu from '@/components/product/Menu'
+import Header from '@/components/product/Header'
 export default {
-  data() {
-    return {
-      menuItems: [
-        'Paper clips',
-        'Post-it notes',
-        'Staples',
-        'Hole punches',
-        'Binders',
-        'Staplers',
-        'Laminators',
-        'Writing utensils',
-        'Paper',
-        'Computers',
-        'Printers',
-        'Fax machines',
-        'Photocopiers',
-        'Cash registers',
-        'Office furniture',
-        'Chairs',
-        'Cubicles',
-        'Filing cabinet',
-        'Armoire desks'
-      ]
-    }
+  components: {
+    Menu,
+    Header
   }
 }
 </script>
