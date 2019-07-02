@@ -6,15 +6,15 @@
       </v-flex>
       <v-flex md10 row>
         <v-layout row wrap>
-          <v-flex class="hidden-md-and-up">
+          <v-flex class="hidden-sm-and-up">
             <Header :product="product" />
           </v-flex>
-          <v-flex d-flex xs12 md4 child-flex>
+          <v-flex d-flex xs12 sm4 child-flex>
             <Images :product="product" />
           </v-flex>
-          <v-flex d-flex xs12 md8>
+          <v-flex d-flex xs12 sm8>
             <v-layout row wrap>
-              <v-flex class="hidden-sm-and-down">
+              <v-flex class="hidden-xs-and-down">
                 <Header :product="product" />
               </v-flex>
               <v-flex d-flex>
