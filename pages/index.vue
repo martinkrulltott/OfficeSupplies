@@ -1,43 +1,53 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <v-card>
-        <v-card-title class="headline">
-          Hello world
-        </v-card-title>
-        <v-card-text>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <v-btn color="primary">
-            primary
-          </v-btn>
-          <v-btn color="accent">
-            accent
-          </v-btn>
-          <v-btn color="secondary">
-            secondary
-          </v-btn>
-          <v-btn color="info">
-            info
-          </v-btn>
-          <v-btn color="warning">
-            warning
-          </v-btn>
-          <v-btn color="error">
-            error
-          </v-btn>
-          <v-btn color="success">
-            success
-          </v-btn>
-        </v-card-text>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-container fluid>
+    <v-layout row>
+      <v-flex md3 row class="hidden-sm-and-down">
+        <v-navigation-drawer class="primary--text" permanent>
+          <v-list dense>
+            <!-- eslint-disable-next-line -->
+            <v-list-tile v-for="item in menuItems" :key="item" @click="">
+              <v-list-tile-content>
+                <v-list-tile-title class="primary--text">
+                  {{ item }}
+                </v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </v-list>
+        </v-navigation-drawer>
+      </v-flex>
+      <v-flex md3 row style="border:1px solid black">
+        Hello world
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-// export default {
-
-// }
+export default {
+  data() {
+    return {
+      menuItems: [
+        'Paper clips',
+        'Post-it notes',
+        'Staples',
+        'Hole punches',
+        'Binders',
+        'Staplers',
+        'Laminators',
+        'Writing utensils',
+        'Paper',
+        'Computers',
+        'Printers',
+        'Fax machines',
+        'Photocopiers',
+        'Cash registers',
+        'Office furniture',
+        'Chairs',
+        'Cubicles',
+        'Filing cabinet',
+        'Armoire desks'
+      ]
+    }
+  }
+}
 </script>
