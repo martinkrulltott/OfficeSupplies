@@ -40,11 +40,11 @@
 </template>
 
 <script>
-import Menu from '@/components/product/Menu'
-import Header from '@/components/product/Header'
-import Description from '@/components/product/Description'
-import Images from '@/components/product/Images'
-import Inspiration from '@/components/product/Inspiration'
+import Menu from '~/components/product/Menu'
+import Header from '~/components/product/Header'
+import Description from '~/components/product/Description'
+import Images from '~/components/product/Images'
+import Inspiration from '~/components/product/Inspiration'
 export default {
   components: {
     Menu,

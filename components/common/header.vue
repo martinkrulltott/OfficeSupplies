@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import Navigation from '@/components/common/Navigation'
+import Navigation from '~/components/common/Navigation'
 export default {
   name: 'Header',
   components: {
