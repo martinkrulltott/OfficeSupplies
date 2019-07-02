@@ -1,6 +1,8 @@
 # OfficeSupplies
 
-> An interactive prototype for a product page
+An interactive prototype for a product page
+
+Live example of the app can be found here https://office-supplies-prototype.herokuapp.com/
 
 ## Build Setup
 
