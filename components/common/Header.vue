@@ -42,17 +42,17 @@
       Check out
     </v-btn>
     <template v-slot:extension class="hidden-sm-and-down">
-      <PageNavigation v-if="extendToolbar" />
+      <Navigation v-if="extendToolbar" />
     </template>
   </v-toolbar>
 </template>
 
 <script>
-import PageNavigation from '~/components/PageNavigation'
+import Navigation from '~/components/common/Navigation'
 export default {
-  name: 'PageHeader',
+  name: 'Header',
   components: {
-    PageNavigation
+    Navigation
   },
   computed: {
     cartSize() {

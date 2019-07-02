@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'ProductMenu',
+  name: 'Menu',
   data() {
     return {
       menuItems: [

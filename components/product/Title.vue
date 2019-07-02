@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'ProductTitle',
+  name: 'Title',
   props: {
     product: {
       type: Object,

@@ -1,22 +1,22 @@
 <template>
   <v-app class="white">
-    <PageHeader />
+    <Header />
     <v-content>
       <nuxt />
     </v-content>
     <v-footer height="auto">
-      <PageFooter />
+      <Footer />
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import PageHeader from '~/components/PageHeader'
-import PageFooter from '~/components/PageFooter'
+import Header from '~/components/common/Header'
+import Footer from '~/components/common/Footer'
 export default {
   components: {
-    PageHeader,
-    PageFooter
+    Header,
+    Footer
   }
 }
 </script>

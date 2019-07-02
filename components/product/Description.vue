@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'ProductDescription',
+  name: 'Description',
   props: {
     product: {
       type: Object,

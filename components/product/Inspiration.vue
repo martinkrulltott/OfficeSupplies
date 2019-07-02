@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'ProductInspiration',
+  name: 'Inspiration',
   props: {
     inspiration: {
       type: Object,
