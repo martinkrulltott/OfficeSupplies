@@ -39,7 +39,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/vuetify', '@nuxtjs/eslint-module'],
+  modules: ['@nuxtjs/vuetify', '@nuxtjs/eslint-module', '@nuxtjs/font-awesome'],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

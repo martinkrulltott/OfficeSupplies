@@ -4,17 +4,19 @@
     <v-content>
       <nuxt />
     </v-content>
-    <v-footer fixed app>
-      <span>Footer</span>
+    <v-footer height="auto">
+      <Footer />
     </v-footer>
   </v-app>
 </template>
 
 <script>
 import Header from '@/components/common/Header'
+import Footer from '@/components/common/Footer'
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>

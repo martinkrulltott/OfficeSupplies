@@ -8,7 +8,12 @@
         contain
       />
     </v-flex>
-    <v-flex v-for="(image, index) in product.images" :key="index" d-flex xs4>
+    <v-flex
+      v-for="(image, index) in product.images"
+      :key="`image-${index}`"
+      d-flex
+      xs4
+    >
       <v-img
         :src="image.src"
         alt="image.alt"

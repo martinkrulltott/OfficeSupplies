@@ -2,7 +2,7 @@
   <v-navigation-drawer class="primary--text" permanent>
     <v-list dense>
       <!-- eslint-disable-next-line -->
-      <v-list-tile v-for="item in menuItems" :key="item" @click="">
+      <v-list-tile v-for="(item, index) in menuItems" :key="`menuItem-${index}`" @click="">
         <v-list-tile-content>
           <v-list-tile-title class="primary--text">
             {{ item }}
