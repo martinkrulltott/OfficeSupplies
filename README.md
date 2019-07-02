@@ -18,3 +18,13 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+### Built using
+```
+Nuxt
+Vue
+Vuetify
+Vuex
+SCSS
+Eslint
+```
