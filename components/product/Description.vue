@@ -1,6 +1,6 @@
 <template>
   <v-layout column>
-    <v-flex d-flex>
+    <v-flex>
       <v-card tile flat>
         <v-card-text class="description pt-1" :class="{ truncated: truncated }">
           {{ product.description }}
