@@ -23,6 +23,17 @@
             </v-layout>
           </v-flex>
         </v-layout>
+        <v-layout row wrap>
+          <v-flex
+            v-for="item in product.inspiration"
+            :key="item"
+            d-flex
+            md4
+            pa-2
+          >
+            <Inspiration :inspiration="item" />
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
   </v-container>
@@ -33,12 +44,14 @@ import Menu from '@/components/product/Menu'
 import Header from '@/components/product/Header'
 import Description from '@/components/product/Description'
 import Images from '@/components/product/Images'
+import Inspiration from '@/components/product/Inspiration'
 export default {
   components: {
     Menu,
     Header,
     Description,
-    Images
+    Images,
+    Inspiration
   },
   data() {
     return {
@@ -59,6 +72,23 @@ export default {
           {
             src: 'paper3.jpg',
             alt: 'Notebooks'
+          }
+        ],
+        inspiration: [
+          {
+            title: 'Paper is awesome!',
+            copy:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio'
+          },
+          {
+            title: 'Paper is awesome!',
+            copy:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.'
+          },
+          {
+            title: 'Paper is awesome!',
+            copy:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet la.'
           }
         ],
         description:

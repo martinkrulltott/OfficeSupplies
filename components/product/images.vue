@@ -1,6 +1,6 @@
 <template>
   <v-layout row wrap align-start align-content-start ma-2>
-    <v-flex d-flex xs12 pa-1>
+    <v-flex d-flex xs12 pb-2>
       <v-img
         :src="selectedImage.src"
         alt="selectedImage.alt"
@@ -8,20 +8,14 @@
         contain
       />
     </v-flex>
-    <v-flex
-      v-for="(image, index) in product.images"
-      :key="index"
-      d-flex
-      xs4
-      pa-1
-    >
+    <v-flex v-for="(image, index) in product.images" :key="index" d-flex xs4>
       <v-img
         :src="image.src"
         alt="image.alt"
         aspect-ratio="1"
         contain
-        @click="selectImage(index)"
         class="image-thumbnail"
+        @click="selectImage(index)"
       />
     </v-flex>
   </v-layout>
