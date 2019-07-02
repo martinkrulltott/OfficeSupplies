@@ -1,16 +1,48 @@
 <template>
-  <v-card color="indigo lighten-2" dark tile flat>
+  <v-card tile flat>
+    <v-card-title primary-title class="py-0">
+      <h2 class="display-1 mb-0">{{ product.title }}</h2>
+    </v-card-title>
     <v-card-text>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-      laboriosam cumque a! Quo consectetur, nesciunt perspiciatis accusantium
-      alias suscipit vero eaque repudiandae, quisquam ad inventore, odit
-      accusamus obcaecati voluptates molestiae?
+      <v-layout row wrap>
+        <v-flex xs6 sm3 md4>
+          <h3 class="headline mb-0 accent--text font-weight-bold">
+            {{ product.price }} kr
+          </h3>
+          <span class="old-price accent--text">{{ product.oldPrice }} kr</span>
+        </v-flex>
+        <v-flex xs6 sm3 md4>
+          <v-select
+            :items="product.variants"
+            label="Select"
+            dense
+            solo
+            flat
+            background-color="grey lighten-3"
+          />
+        </v-flex>
+        <v-flex sm12 md4 text-md-right>
+          <v-btn depressed color="primary" class="ma-0">
+            Buy
+          </v-btn>
+        </v-flex>
+      </v-layout>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: ['product']
 }
 </script>
+
+<style lang="scss" scoped>
+.old-price {
+  position: relative;
+  top: -10px;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+</style>
